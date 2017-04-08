@@ -216,7 +216,12 @@ def mult_numbers(numbers):
         1
     """
 
-    return None
+    mult_total = 1
+
+    for number in numbers:
+        mult_total *= number
+
+    return mult_total
 
 
 def join_strings(words):
