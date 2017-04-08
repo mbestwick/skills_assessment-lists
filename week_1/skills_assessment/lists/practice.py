@@ -269,7 +269,12 @@ def average(numbers):
     a feel free to provide a good solution here.)
     """
 
-    return 0
+    list_length = float(len(numbers))
+    list_sum = sum_numbers(numbers)
+
+    list_average = list_sum/list_length
+
+    return list_average
 
 
 def join_strings_with_comma(words):
