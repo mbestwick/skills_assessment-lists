@@ -146,7 +146,12 @@ def halvesies(numbers):
         [0.5, 2.5]
     """
 
-    return []
+    halvesies_list = list()
+
+    for number in numbers:
+        halvesies_list.append(number/2.0)
+
+    return halvesies_list
 
 
 def word_lengths(words):
