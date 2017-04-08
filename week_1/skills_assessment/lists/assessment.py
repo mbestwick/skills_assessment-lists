@@ -19,9 +19,7 @@ def all_odd(numbers):
 
     odd_list = list()               # creates empty list
 
-    for number in numbers:          # loops through each number in list
-        if number % 2 != 0:         # checks if divisible by 2, if not appends to odd_list
-            odd_list.append(number)
+    odd_list = [number for number in numbers if number % 2 != 0]  # loops through each number in list, checks if divisible by 2, if not adds to odd_list
 
     return odd_list                 # returns odd_list (list of odd numbers)
 
