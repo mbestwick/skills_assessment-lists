@@ -17,13 +17,13 @@ def all_odd(numbers):
         []
     """
 
-    odd_list = list()
+    odd_list = list()               # creates empty list
 
-    for number in numbers:
-        if number % 2 != 0:
+    for number in numbers:          # loops through each number in list
+        if number % 2 != 0:         # checks if divisible by 2, if not appends to odd_list
             odd_list.append(number)
 
-    return odd_list
+    return odd_list                 # returns odd_list (list of odd numbers)
 
 
 def print_indices(items):
@@ -49,10 +49,11 @@ def print_indices(items):
         1 Jeep
         2 Toyota
         3 Volvo
-    
+ 
     """
 
-    print("Nothing at all")
+    for i in range(len(items)):     # loops through indices
+        print i, items[i]           # prints index then item at index
 
 
 def foods_in_common(foods1, foods2):
