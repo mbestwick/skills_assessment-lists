@@ -424,8 +424,15 @@ def find_letter_indices(words, letter):
     `None`.)
     """
 
-    return []
+    index_list = list()
 
+    for i in range(len(words)):
+        if letter in words[i]:
+            index_list.append(i)
+        else:
+            index_list.append(None)
+
+    return index_list
 
 #####################################################################
 # END OF PRACTICE: You can ignore everything below.
