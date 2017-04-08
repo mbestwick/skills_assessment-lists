@@ -38,7 +38,13 @@ def long_words(words):
         []
     """
 
-    return ['the wrong thing']
+    long_words_list = list()
+
+    for word in words:
+        if len(word) > 4:
+            long_words_list.append(word)
+
+    return long_words_list
 
 
 def n_long_words(words, n):
@@ -56,7 +62,13 @@ def n_long_words(words, n):
         ['apples', 'bananas']
     """
 
-    return ['the wrong thing']
+    n_long_words_list = list()
+
+    for word in words:
+        if len(word) > n:
+            n_long_words_list.append(word)
+
+    return n_long_words_list
 
 
 def smallest_int(numbers):
