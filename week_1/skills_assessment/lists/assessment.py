@@ -91,15 +91,15 @@ def foods_in_common(foods1, foods2):
 
     """
 
-    foods1_set = set(foods1)
-    foods2_set = set(foods2)
+    foods1_set = set(foods1)                # creates a set from foods1
+    foods2_set = set(foods2)                # creates a set from foods2
 
-    common_set = foods1_set & foods2_set
+    common_set = foods1_set & foods2_set    # creates a set that finds the intersection of the two new sets
 
-    common_list = list(common_set)
-    common_list.sort()
+    common_list = list(common_set)          # creates a list from the intersection set
+    common_list.sort()                      # sorts the list alphabetically
 
-    return common_list
+    return common_list                      # returns the list
 
 
 def every_other_item(items):
@@ -119,7 +119,7 @@ def every_other_item(items):
        ['you', 'are', 'good', 'at', 'code']
     """
 
-    return items[::2]
+    return items[::2]              # returns list that is slice of input list, with step2
 
 
 def largest_n_items(items, n):
@@ -144,7 +144,16 @@ def largest_n_items(items, n):
         [3, 3]
     """
 
-    return []
+    largest_list = list()               # creates empty list
+
+    items.sort()                        # sorts input list from lowest to highest
+
+    for i in range(1, n+1):             # for a range from 1 to n+1
+        largest_list.append(items[-i])  # appends from last in items list (highest), and stops once done n times
+
+    largest_list.sort()                 # sorts the largest_list from lowest to highest
+
+    return largest_list                 # returns largest_list
 
 
 #####################################################################
