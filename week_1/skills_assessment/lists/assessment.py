@@ -146,8 +146,7 @@ def largest_n_items(items, n):
 
     items.sort()                        # sorts input list from lowest to highest
 
-    for i in range(1, n+1):             # for a range from 1 to n+1
-        largest_list.append(items[-i])  # appends from last in items list (highest), and stops once done n times
+    largest_list = [items[-i] for i in range(1, n+1)]   # in a range from 1 to n+1, appends items from the right side of input list (highest numbers)
 
     largest_list.sort()                 # sorts the largest_list from lowest to highest
 
